@@ -194,6 +194,11 @@ a {
     height: 40px;
 }
 
+.icon__name {
+    width: 200px;
+    height: 50px;
+}
+
 /* Buttons */
 .btn {
     font-size: 1.8rem;
@@ -594,4 +599,31 @@ a {
 .collapsible--expanded .collapsible__content {
     max-height: 100vh;
     opacity: 1;    
+}
+
+/* Nav Bar */
+.nav {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.nav__list {
+    width: 100%;
+}
+
+.nav__item {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid #222;
+}
+
+.nav__item > a {
+    color: #d2d0db;
+    transition: color 0.3s;
+}
+
+.nav__item > a:hover {
+    color: #fff;
 }

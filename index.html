@@ -11,15 +11,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <div class="collapsible collapsible--expanded">
-    <header class="collapsible__header">
-        <h2 class="collapsible__heading">Item 1</h2>
-            <img class="icon icon--white collapsible__chevron" src="images/chevron.svg" alt="">
-    </header>
-    <div class="collapsible__content">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, accusamus. Repudiandae enim hic reiciendis ab odio placeat? Vitae, quis harum.
-    </div>
-   </div>
-   <script src="main.js"></script>
+   <nav class="nav">
+       <a href="/"><img class="icon__name" src="images/name 2.0.svg" alt=""></a> 
+       <svg class="icon icon--white">
+        <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list">
+            <li class="nav__item"><a href="#">Hosting</a></li>
+            <li class="nav__item"><a href="#">Hosting</a></li>
+            <li class="nav__item"><a href="#">Hosting</a></li>
+            <li class="nav__item"><a href="#">Hosting</a></li>
+        </ul>
+   </nav>
 </body>
 </html>

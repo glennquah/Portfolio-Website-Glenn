@@ -176,6 +176,19 @@ a {
     align-items: center;
 }
 
+.icon-container--accent {
+    background: var(--color-accent);
+}
+
+.icon--white {
+    fill: white;
+}
+
+.icon--small {
+    width: 30px;
+    height: 30px;
+}
+
 /* Buttons */
 .btn {
     font-size: 1.8rem;
@@ -226,6 +239,11 @@ a {
     background: white;
     color: var(--color-headings);
     border: 2px solid var(--color-headings);
+}
+
+.btn--stretch {
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .btn--outline:hover {
@@ -414,4 +432,90 @@ a {
         font-size: 1.6rem;
     }
     
+}
+
+/* Grids */
+.grid {
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .grid--1x2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Testimonial */
+.testimonial {
+    padding: 3rem;
+}
+
+.testimonial__image {
+    position: relative;
+}
+
+.testimonial__image > img {
+    width: 100%;
+}
+
+.testimonial__image > .icon-container {
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+    .testimonial .quote, .testimonial .quote__author {
+        font-size: 2.4rem;
+    }
+
+    .testimonial .quote {
+        margin-left: 6rem;
+    }
+}
+
+/* CallOuts */
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background: var(--color-primary);
+    color: white;
+}
+
+.callout__heading {
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.callout .btn {
+    justify-self: center;
+    align-self: center;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2 rem;
+    }
 }

@@ -4,6 +4,8 @@
     --color-accent: #e27d60;
     --color-headings:#242582;
     --color-body: #5d5c61;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 
 *, *::after, *::before {
@@ -224,8 +226,70 @@ a {
     border: 2px solid var(--color-headings);
 }
 
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: white;
+}
+
 @media screen and (min-width: 1024px) {
     .btn {
         font-size: 1.5rem;
     }
+}
+
+/* INPUTS */
+.input {
+    padding: 1.5rem 3.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    outline: none;
+    color: var(--color--headings);
+    font-size: 2rem;
+}
+
+::placeholder {
+    color: #cbcbd7;
+}
+
+.input-group {
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+    display: flex;
+}
+
+.input-group .input {
+    border: 0;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+    margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+        font-size: 1.5rem;
+    }
+}
+
+/* Cards */
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header, .card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background: var(--color-primary);
+    color: white;
+}
+
+.card--secondary .card__header {
+    background: var(--color-secondary);
+    color: white;
 }

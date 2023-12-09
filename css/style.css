@@ -330,6 +330,10 @@ a {
 }
 
 /* Jobs */
+.job {
+    transition: transform .2s ease-out;
+}
+
 .job__name {
     color: white;
     margin: 0;
@@ -337,8 +341,20 @@ a {
     font-size: 2.4rem;
 }
 
+.job--current {
+    transform: scale(1.1);
+}
+
 .job__position {
     font-size: 4rem;
+}
+
+.job:hover {
+    transform: scale(1.05);
+}
+
+.job--current:hover {
+    transform: scale(1.15);
 }
 
 .job__duration {
@@ -690,5 +706,38 @@ a {
     .hero__content {
         text-align: left;
         align-self: center;
+    }
+}
+
+/* Jobs Block */
+.block-plans .grid {
+    gap: 4rem;
+}
+
+.block-plans .card{
+    max-width: 500px;
+    margin: 0;
+}
+
+/* Features */
+.feature__heading {
+    margin: 1rem 0;
+}
+
+.feature {
+    gap: 4rem 2rem;
+}
+
+.feature:first-of-type {
+    margin-top: 6rem;
+}
+
+.feature__image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .feature:nth-of-type(odd) .feature__content {
+        order: 2;
     }
 }

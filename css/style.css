@@ -551,10 +551,12 @@ a {
 .block {
     --padding-vertical: 6rem;
     padding: var(--padding-vertical) 2rem;
+    padding: 5rem;
 }
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -684,7 +686,7 @@ a {
 
 /* Hero */
 .hero {
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 
 .hero__tagline {
@@ -718,6 +720,8 @@ a {
     max-width: 500px;
     margin: 0;
 }
+
+
 
 /* Features */
 .feature__heading {

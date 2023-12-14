@@ -1,8 +1,8 @@
 :root {
-    --color-primary: #41b3a3;
-    --color-secondary: #85dcb8;
-    --color-accent: #e27d60;
-    --color-headings:#242582;
+    --color-primary: #de9e46;
+    --color-secondary: #f4d9ae;
+    --color-accent: #cd4f41;
+    --color-headings:#1c404c;
     --color-body: #5d5c61;
     --color-border: #ccc;
     --border-radius: 30px;
@@ -329,13 +329,16 @@ a {
     background: var(--color-primary)
 }
 
+.header__color {
+    color: var(--color-headings);
+}
+
 /* Jobs */
 .job {
     transition: transform .2s ease-out;
 }
 
 .job__name {
-    color: white;
     margin: 0;
     font-weight: 500;
     font-size: 2.4rem;
@@ -564,13 +567,13 @@ a {
 }
 
 .block--dark {
-    background: black;
+    background: var(--color-secondary);
     color: #7b858b;
 }
 
 
 .block--dark .block__heading {
-    color: white;
+    color: var(--color-headings);
 }
 
 .block--skewed-right {
@@ -623,7 +626,7 @@ a {
 
 /* Nav Bar */
 .nav {
-    background: black;
+    background: var(--color-secondary);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -642,7 +645,7 @@ a {
 }
 
 .nav__item > a {
-    color: #d2d0db;
+    color: var(--color-headings);
     transition: color 0.3s;
 }
 
@@ -692,7 +695,7 @@ a {
 
 .hero__tagline {
     font-size: 2rem;
-    color: #b9c3cf;
+    color: var(--color-headings);
     letter-spacing: 1px;
     margin: 2rem 0 5rem;
 }
@@ -793,7 +796,7 @@ a {
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: var(--color-headings);
     display: inline-block;
     transition: 0.3s;
 }
@@ -822,9 +825,8 @@ form input, form textarea {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     border-radius: 6px;
-    background: #262626;
     padding: 15px;
-    color: white;
+    color: var(--color-headings);
 }
 
 .row {
@@ -835,16 +837,21 @@ form input, form textarea {
 
 .sub-title {
     font-size: 6rem;
-    color: white;
+    color: var(--color-headings);
     margin-top: 30px;
 }
 
 #msg {
-    color: #61b752;
+    color: var(--color-headings);
     margin-top: 10px;
     display: block;
 }
 
+.color__green {
+    color: var(--color-headings);
+}
+
+/* Timeline */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -858,7 +865,7 @@ form input, form textarea {
     top: 0;
     bottom: 0;
     width: 4px;
-    background: #c5c5c5;
+    background: var(--color-headings);
     left: 50%;
     margin-left: -2px;
   }

@@ -32,17 +32,17 @@
     <section class="block block--dark block--skewed-left">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Hi, I am Glenn</h1>
+                <h1 class="block__heading" data-aos="fade-up" data-aos-duration="1000">Hi, I am Glenn</h1>
                 <p class="hero__tagline">A sophomore at the National University of Singapore studying Information Systems!</p>
                 <a href="https://www.linkedin.com/in/glenn-quah-59390a18b/" class="btn btn--accent btn--stretched">Connect With Me!</a>
             </header>
-            <img class="hero__image" src="images/headerphoto.png" alt="">
+            <img class="hero__image data-aos="fade-up" data-aos-duration="1000"" src="images/headerphoto.png" alt="">
         </div>
     </section>
 
     <section class="jobs__done">
         <header class="block__header" id="jobs">
-            <h2>Jobs I have Done</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000">Jobs I have Done</h2>
             <p>Thriving in diverse roles, blending academic prowess with real-world experience.</p>
         </header>
         <section class="block container block-plans">
@@ -50,10 +50,10 @@
                 <div class="job">
                     <div>
                         <div class="card card--secondary">
-                            <header class="card__header">
+                            <header class="card__header header__color">
                                 <h3 class="job__name">Starbucks Singapore</h3>
-                                <div><span class="job__position">Operations Supervisor</span></div>
-                                <span class="job__duration">Dec 2016 - Dec 2023</span>
+                                <div><span class="job__position  header__color">Operations Supervisor</span></div>
+                                <span class="job__duration  header__color">Dec 2016 - Dec 2023</span>
                             </header>
                             <div class="card__body">
                                 <ul class="list list--pointer">
@@ -87,9 +87,9 @@
                     <div>
                         <div class="card card--secondary">
                             <header class="card__header">
-                                <h3 class="job__name">SG ASIA HYDRAULICS PTE LTD</h3>
-                                <div><span class="job__position">Sales & Technical Coordinator</span></div>
-                                <span class="job__duration">Mar 2020 - Oct 2020</span>
+                                <h3 class="job__name header__color">SG ASIA HYDRAULICS PTE LTD</h3>
+                                <div><span class="job__position  header__color">Sales & Technical Coordinator</span></div>
+                                <span class="job__duration  header__color">Mar 2020 - Oct 2020</span>
                             </header>
                             <div class="card__body">
                                 <ul class="list list--pointer">
@@ -136,7 +136,7 @@
 
     <section class="block container" id="Projects">
         <header class="block__header">
-            <h2>Projects I have Done</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000">Projects I have Done</h2>
             <p>Crafting innovative solutions through diverse project applications, bridging theory with practical implementation</p>
         </header>
         <article class="grid grid--1x2 feature">
@@ -315,7 +315,7 @@
             <div class="row">
                 <div class="contact-left">
                     <h1 class="sub-title">Contact Me</h1>
-                    <p>Let's Connect: Reach out and let's start a conversation!</p>
+                    <p class="color__green">Let's Connect: Reach out and let's start a conversation!</p>
                     <p><i class="fa-solid fa-message"></i> Quah.glenn@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> +65 87534510</p>
                     <div class="social-icons">
@@ -338,6 +338,9 @@
     </section>
 
     <script src="main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

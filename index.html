@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -18,10 +20,10 @@
              <use href="images/sprite.svg#menu"></use>
              </svg>
              <ul class="list nav__list collapsible__content">
-                 <li class="nav__item"><a href="#">Hosting</a></li>
-                 <li class="nav__item"><a href="#">Hosting</a></li>
-                 <li class="nav__item"><a href="#">Hosting</a></li>
-                 <li class="nav__item"><a href="#">Hosting</a></li>
+                 <li class="nav__item"><a href="#jobs">Job Experience</a></li>
+                 <li class="nav__item"><a href="#Projects">Past Projects</a></li>
+                 <li class="nav__item"><a href="#Testimonial">Testimonials</a></li>
+                 <li class="nav__item"><a href="#Contact">Contact Me</a></li>
              </ul>
         </nav>
     </header>
@@ -33,52 +35,48 @@
                 <p class="hero__tagline">A sophomore at the National University of Singapore studying Information Systems!</p>
                 <a href="https://www.linkedin.com/in/glenn-quah-59390a18b/" class="btn btn--accent btn--stretched">Connect With Me!</a>
             </header>
-            <img class="hero__image" src="images/banner.png" alt="">
+            <img class="hero__image" src="images/headerphoto.png" alt="">
         </div>
     </section>
 
-    <header class="block__header">
+    <header class="block__header" id="jobs">
         <h2>Jobs I have Done</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi, quisquam.</p>
+        <p>Thriving in diverse roles, blending academic prowess with real-world experience.</p>
     </header>
     <section class="block container block-plans">
         <div class="grid grid--1x3">
             <div class="job">
                 <div>
-                    <div class="card card--primary">
+                    <div class="card card--secondary">
                         <header class="card__header">
                             <h3 class="job__name">Starbucks Singapore</h3>
                             <div><span class="job__position">Operations Supervisor</span></div>
-                            <div><span class="badge badge--secondary badge--small">Leadership</span></div>
-                            <span class="job__duration">Sept 2023 - Dec 2024</span>
+                            <span class="job__duration">Dec 2016 - Dec 2023</span>
                         </header>
                         <div class="card__body">
                             <ul class="list list--pointer">
-                                <li class = "list__item">Item 1</li>
-                                <li class = "list__item">Item 2</li>
-                                <li class = "list__item">Item 3</li>
+                                <li class = "list__item">Supervised and Managed daily operations</li>
+                                <li class = "list__item">Coffee Master / Barista Trainer</li>
+                                <li class = "list__item">3rd Runner Up of the Regional Barista Championship 2023</li>
                             </ul>
-                            <button class="btn btn--outline btn--block">For More Information</button>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="job job--current ">
                 <div>
-                    <div class="card card--secondary">
+                    <div class="card card--primary">
                         <header class="card__header">
-                            <h3 class="job__name">Starbucks Singapore</h3>
-                            <div><span class="job__position">Operations Supervisor</span></div>
-                            <div><span class="badge badge--secondary badge--small">Leadership</span></div>
-                            <span class="job__duration">Sept 2023 - Dec 2024</span>
+                            <h3 class="job__name">Urban Sharing</h3>
+                            <div><span class="job__position">Fullstack Developer</span></div>
+                            <span class="job__duration">Jan 2024 - Current</span>
                         </header>
                         <div class="card__body">
                             <ul class="list list--pointer">
-                                <li class = "list__item">Item 1</li>
-                                <li class = "list__item">Item 2</li>
-                                <li class = "list__item">Item 3</li>
+                                <li class = "list__item">Work on Web Applications for clients to manage and monitor fleets of bikes, scooters and cars</li>
+                                <li class = "list__item">Responsible for both the Front-end and Back-end</li>
+                                <li class = "list__item">Part of the NUS-NOC Program</li>
                             </ul>
-                            <button class="btn btn--outline btn--block">For More Information</button>
                         </div>
                     </div>
                 </div>
@@ -87,18 +85,16 @@
                 <div>
                     <div class="card card--secondary">
                         <header class="card__header">
-                            <h3 class="job__name">Starbucks Singapore</h3>
-                            <div><span class="job__position">Operations Supervisor</span></div>
-                            <div><span class="badge badge--secondary badge--small">Leadership</span></div>
-                            <span class="job__duration">Sept 2023 - Dec 2024</span>
+                            <h3 class="job__name">SG ASIA HYDRAULICS PTE LTD</h3>
+                            <div><span class="job__position">Sales & Technical Coordinator</span></div>
+                            <span class="job__duration">Mar 2020 - Oct 2020</span>
                         </header>
                         <div class="card__body">
                             <ul class="list list--pointer">
-                                <li class = "list__item">Item 1</li>
-                                <li class = "list__item">Item 2</li>
-                                <li class = "list__item">Item 3</li>
+                                <li class = "list__item">Implemented ISO 9001, ISO 45001 and BizSafe Star</li>
+                                <li class = "list__item">Part of the Engineering team to repair and install hydraulic equipments</li>
+                                <li class = "list__item">Shipyard Safety Supervisor</li>
                             </ul>
-                            <button class="btn btn--outline btn--block">For More Information</button>
                         </div>
                     </div>
                 </div>
@@ -115,10 +111,10 @@
         </div>
     </section>
 
-    <section class="block container">
+    <section class="block container" id="Projects">
         <header class="block__header">
             <h2>Projects I have Done</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, laudantium!</p>
+            <p>Crafting innovative solutions through diverse project applications, bridging theory with practical implementation</p>
         </header>
         <article class="grid grid--1x2 feature">
             <div>
@@ -128,8 +124,8 @@
                     </svg>
                 </span>
                 <h3 class="feature__heading">Connect Card</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, vel temporibus. Nulla iste aliquid sint. Iure laudantium odit totam incidunt ratione rerum molestias provident voluptatem necessitatibus error. Quibusdam, a recusandae?</p>
-                <a href="#" class="link-arrow">Learn More</a>
+                <p>ConnectCard is a Mobile App where it revolutionizes contact management: effortlessly scan physical business cards using your phone camera to create digital profiles on the app. Seamlessly update and share real-time information, expanding your network by scanning and exchanging QR codes. Streamline your wallet while staying effortlessly connected.</p>
+                <a href="https://github.com/glennquah/ConnectCard" class="link-arrow">GITHUB REPOSITARY</a>
             </div>
             <img class="feature__image" src="images/easy.jpg" alt="">
         </article>
@@ -142,9 +138,10 @@
                         <use href="images/sprite.svg#settings"></use>
                     </svg>
                 </span>
-                <h3 class="feature__heading">Connect Card</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, vel temporibus. Nulla iste aliquid sint. Iure laudantium odit totam incidunt ratione rerum molestias provident voluptatem necessitatibus error. Quibusdam, a recusandae?</p>
-                <a href="#" class="link-arrow">Learn More</a>
+                <h3 class="feature__heading">Earn O'Clock</h3>
+                <p>EARN O'CLOCK is an innovative app tailored for F&B and retail businesses, providing a streamlined solution to efficiently manage part-time employees. Our platform empowers employers to recognize their dedicated staff, facilitating tasks such as roster management, time tracking, and more.</p>
+                <p>DSTA HACKATHON (CODE_EXP) People's Choice Award Winner Submission</p>
+                <a href="https://github.com/glennquah/EarnOClock" class="link-arrow">GITHUB REPOSITARY</a>
             </div>
             <img class="feature__image" src="images/easy.jpg" alt="">
         </article>
@@ -157,55 +154,167 @@
                         <use href="images/sprite.svg#settings"></use>
                     </svg>
                 </span>
-                <h3 class="feature__heading">Connect Card</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic, vel temporibus. Nulla iste aliquid sint. Iure laudantium odit totam incidunt ratione rerum molestias provident voluptatem necessitatibus error. Quibusdam, a recusandae?</p>
-                <a href="#" class="link-arrow">Learn More</a>
+                <h3 class="feature__heading">TikToken</h3>
+                <p>In the era of digital convergence, we identified a significant disparity between content creation and eCommerce within platforms like TikTok. Despite users influencing purchase decisions through product showcases, there lacked a seamless transition from viewing content to making a purchase. We envisioned a platform where engagement isn't solely a measure of popularity but also a valuable currency. Enter TikToken—an innovative space where promoting items not only engages but also rewards you for your contribution.</p>   
+                <p>TikTok Hackathon 2023 Submission</p>
+                <a href="https://github.com/glennquah/TikToken-FrontEnd" class="link-arrow">GITHUB REPOSITARY</a>
             </div>
             <img class="feature__image" src="images/easy.jpg" alt="">
         </article>
     </section>
+    <section class="block container">
+        <article class="grid grid--1x2 feature">
+            <div class="feature__content">
+                <span class="icon-container">
+                    <svg class="icon icon--primary">
+                        <use href="images/sprite.svg#settings"></use>
+                    </svg>
+                </span>
+                <h3 class="feature__heading">Flight Enterprise System</h3>
+                <p>Inspired by the functionality and efficiency of Singapore Airlines' Online Reservation Platform, I have developed an enterprise-level system meticulously tailored to proficiently manage and streamline the intricacies of flight reservations.</p>
+                <a href="https://github.com/glennquah/Flight-Enterprise-System" class="link-arrow">GITHUB REPOSITARY</a>
+            </div>
+            <img class="feature__image" src="images/easy.jpg" alt="">
+        </article>
+    </section>
+    
 
-    <section class="block">
+    <section class="block" id="Testimonial">
         <header class="block__header">
             <h2>Testimonials</h2>
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, velit.
+                Inspiring words that speak volumes about my work and dedication.
             </p>
         </header>
         <div class="container">
-            <body>
-                <div class="card testimonial">
-                    <div class="grid grid--1x2">
-                        <div class="testimonial__image">
-                            <img src="images/sbux.jpg" alt="Barista Photo">
-                            <span class="icon-container icon-container--accent">
-                                <svg class="icon icon--small icon--white">
-                                    <use href="images/sprite.svg#quotes"></use>
-                                </svg>
-                            </span>
-                        </div>
-                        <body>
-                            <blockquote class="quote">
-                                <p class="quote__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus amet reiciendis, ratione consequatur vero tenetur debitis alias nisi explicabo aliquid. Accusantium libero fuga exercitationem, et itaque a ipsum ratione molestias suscipit eum error aperiam obcaecati quis inventore tenetur perferendis aut assumenda autem consectetur, distinctio porro voluptatibus? Enim corporis est quis?</p>
-                                <footer>
-                                    <div class="media">
-                                        <div class="media__image"></div>
-                                            <svg class="icon icon--primary quote__line">
-                                                <use href="images/sprite.svg#line"></use>
-                                            </svg>
-                                        <div class="media__body">
-                                            <h3 class = "media__title quote__author">John Smith</h3>
-                                            <p class = "quote__company">Starbucks</p>
-                                        </div>
+            <div class="card testimonial">
+                <div class="grid grid--1x2">
+                    <div class="testimonial__image">
+                        <img src="images/sbux.jpg" alt="Barista Photo">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--small icon--white">
+                                <use href="images/sprite.svg#quotes"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div><!-- Changed from body to div -->
+                        <blockquote class="quote">
+                            <p class="quote__text">Glenn possesses a Positive attitude
+                                while taking tasks with a genuine and sincere approach. What sets Glenn apart is his ability to be
+                                patient and tailor different teaching styles to easily help his peers to understand. He is a committed
+                                supervisor who reliably performed his responsibilities to the best of his ability.</p>
+                            <footer>
+                                <div class="media">
+                                    <div class="media__image"></div>
+                                    <svg class="icon icon--primary quote__line">
+                                        <use href="images/sprite.svg#line"></use>
+                                    </svg>
+                                    <div class="media__body">
+                                        <h3 class="media__title quote__author">Yew Tecky</h3>
+                                        <p class="quote__company">Starbucks Jewel Store Manager</p>
                                     </div>
-                                </footer>
-                            </blockquote>
-                        </body>
+                                </div>
+                            </footer>
+                        </blockquote>
                     </div>
                 </div>
-            </body>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card testimonial">
+                <div class="grid grid--1x2">
+                    <div class="testimonial__image">
+                        <img src="images/sgasia photo.jpg" alt="Barista Photo">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--small icon--white">
+                                <use href="images/sprite.svg#quotes"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div><!-- Changed from body to div -->
+                        <blockquote class="quote">
+                            <p class="quote__text">As a Sales Coordinator, Glenn played a crucial role in helping our company to become ISO 9001, ISO 45001,
+                                and BizSafe Star certified. He implemented Quality Management System (ISO 9001) and Occupational Health
+                                and Safety Management System (ISO 45001 & BizSafe Star) for the company. In just three months, he singlehandedly completed the entire process of certification. His fast and precise correspondence with the auditor
+                                earned him praise for his efficiency and professionalism</p>
+                            <footer>
+                                <div class="media">
+                                    <div class="media__image"></div>
+                                    <svg class="icon icon--primary quote__line">
+                                        <use href="images/sprite.svg#line"></use>
+                                    </svg>
+                                    <div class="media__body">
+                                        <h3 class="media__title quote__author">Haji Yusof Mohammed</h3>
+                                        <p class="quote__company">Managing Director</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="card testimonial">
+                <div class="grid grid--1x2">
+                    <div class="testimonial__image">
+                        <img src="images/mtu photo.jpg" alt="Barista Photo">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--small icon--white">
+                                <use href="images/sprite.svg#quotes"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <div><!-- Changed from body to div -->
+                        <blockquote class="quote">
+                            <p class="quote__text">Glenn executed his daily tasks with confidence and engaged in his work creatively, consistently producing excellent results. Glenn did not shy away form challenges and was not afraid to seek help when needed. Armed with good work ethics, he took the work he was assigned seriously and always produced results above expectation.</p>
+                            <footer>
+                                <div class="media">
+                                    <div class="media__image"></div>
+                                    <svg class="icon icon--primary quote__line">
+                                        <use href="images/sprite.svg#line"></use>
+                                    </svg>
+                                    <div class="media__body">
+                                        <h3 class="media__title quote__author">President</h3>
+                                        <p class="quote__company">MTU ASIA Pte Ltd</p>
+                                    </div>
+                                </div>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+         
+    <section class="block block--dark" id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>Let's Connect: Reach out and let's start a conversation!</p>
+                    <p><i class="fa-solid fa-message"></i> Quah.glenn@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +65 87534510</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/glenn-quah-59390a18b/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/glennquah"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="images/Glenn's CV.pdf" download class="btn btn--accent btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name = "Name" placeholder="Your Name">
+                        <input type="email" name = "Email" placeholder="Your Email">
+                        <textarea name="Message" id="" rows="10" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn--accent">Submit</button>
+                    </form>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="main.js"></script>
+
 </body>
 </html>

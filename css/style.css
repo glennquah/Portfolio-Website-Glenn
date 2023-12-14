@@ -730,6 +730,10 @@ a {
     margin: 1rem 0;
 }
 
+.javaE {
+    width: 60%;
+}
+
 .feature {
     gap: 4rem 2rem;
 }
@@ -739,7 +743,20 @@ a {
 }
 
 .feature__image {
-    width: 100%;
+    margin-top: 70px;
+    width: 120%;
+}
+
+.con_card {
+    margin-left: 100px;
+    width: 80%;
+}
+
+.earnoclock {
+    width: 130%; 
+    height: auto; 
+    margin-left: -100px;
+    margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -827,3 +844,62 @@ form input, form textarea {
     margin-top: 10px;
     display: block;
 }
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: #c5c5c5;
+    left: 50%;
+    margin-left: -2px;
+  }
+  
+  .timeline-item {
+    padding: 20px 0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  
+  .timeline-item-content {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .timeline-item-content h3 {
+    margin-top: 0;
+    color: #444;
+  }
+  
+  .timeline-item-content p {
+    margin: 0;
+    color: #777;
+  }
+  
+  .timeline-item-content .date {
+    position: absolute;
+    top: -16px;
+    right: 5px;
+    font-size: 14px;
+    background: #c5c5c5;
+    padding: 2px 8px;
+    border-radius: 3px;
+    color: white;
+  }
+
+  .jobs__done {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }

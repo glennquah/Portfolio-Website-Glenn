@@ -755,7 +755,7 @@ a {
 
 .earnoclock {
   width: 130%;
-  height: auto;
+  height: 80%;
   margin-left: -100px;
   margin-top: 20px;
 }
@@ -763,6 +763,29 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(odd) .feature__content {
     order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .earnoclock {
+    width: 90%;
+    height: 80%;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+  .con_card {
+    margin-left: 0px;
+    width: 90%;
+  }
+
+  .feature__image {
+    margin-top: 70px;
+    width: 90%;
+  }
+
+  .javaE {
+    width: 90%;
   }
 }
 
@@ -910,7 +933,15 @@ form textarea {
   margin-bottom: 50px;
 }
 
-/* Base styles */
+@media (max-width: 480px) {
+  .timeline-item {
+    padding: 20px 0;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+}
 
 /* Responsive styles */
 @media (max-width: 768px) {

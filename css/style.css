@@ -452,7 +452,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .quote {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .quote__author {
@@ -461,6 +461,12 @@ a {
 
   .quote__company {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 1.5rem;
   }
 }
 
